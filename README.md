@@ -3,6 +3,7 @@ This is a repository that builds Zsim simulator with DRAMSim3 into a framework. 
 2. uint64_t GetRankMask() const;
 3. uint64_t GetBankMask() const;
 4. uint64_t GetRowMask() const;
+
 Details can follow func GetTCK() in dramsim.h.
 
 1. Download zsim_DRAMsim3
