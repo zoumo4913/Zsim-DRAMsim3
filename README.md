@@ -1,4 +1,9 @@
-This is a repository that builds Zsim simulator with DRAMSim3 into a framework. Assuming that you have downloaded DRAMsim3 in location "mylocation" and run "make -j4" inside dramsim3 folder(generate libdramsim3.so). For current version, four interfaces are missed in DRAMsim3, please add
+This is a repository that builds Zsim simulator with DRAMSim3 into a framework. Assuming that you have downloaded DRAMsim3 in location "mylocation" and run "make -j4" inside dramsim3 folder(generate libdramsim3.so). For current DRAMsim3 version (which is founded in Github), four interfaces are missed in DRAMsim3 but used by zsim, please add these four functions in dramsim3.h, memory_system.h, and memory_system.cc:
+1. uint64_t GetChannelMask() const;
+2. uint64_t GetRankMask() const;
+3. uint64_t GetBankMask() const;
+4. uint64_t GetRowMask() const;
+Details can follow func GetTCK() in dramsim.h.
 
 1. Download zsim_DRAMsim3
 2. cd zsim_DRAMsim3
