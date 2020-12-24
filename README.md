@@ -8,6 +8,7 @@ If you download DRAMsim3 from github, there are these locations to be changed to
    uint64_t GetBankMask() const;
    uint64_t GetRowMask() const;
 
+You can download DRAMsim3 from https://github.com/zoumo4913/DRAMsim3.git which is a changed version.
 Assuming that you have downloaded DRAMsim3 in location "mylocation" and run "make -j4" inside dramsim3 folder(generate libdramsim3.so). 
 Now start Zsim part.
 
