@@ -1,6 +1,6 @@
 This is a repository that builds Zsim simulator with DRAMSim3 into a framework. 
 
-If you download DRAMsim3 from github, there are these locations to be changed to justify Zsim.
+If you download DRAMsim3 from https://github.com/umd-memsys/DRAMsim3.git, there are these locations to be changed to justify Zsim.
 1. Edit Makefile in DRAMsim3, edit CXXFLAGS line to "CXXFLAGS=-Wall -O3 -fPIC -std=c++11 $(INC) -DFMT_HEADER_ONLY=1 -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=2"
 2. four interfaces are missed in DRAMsim3 but used by zsim, please add these four functions in dramsim3.h, memory_system.h, and memory_system.cc, following func GetTCK() in dramsim.h.:
    uint64_t GetChannelMask() const;
